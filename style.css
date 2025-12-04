@@ -1,12 +1,11 @@
-/* --- 1. VARIABLES (HOÀNG GIA - SANG TRỌNG) --- */
 :root {
-  --red-maroon: #8B0000;     /* Đỏ đô - Quyền lực */
-  --red-bright: #C41E3A;     /* Đỏ tươi - Điểm nhấn */
-  --gold-main: #D4AF37;      /* Vàng kim loại */
-  --gold-light: #F4E4BC;     /* Vàng kem */
-  --green-jade: #004225;     /* Xanh ngọc */
-  --cream-bg: #FAF8F5;       /* Nền kem */
-  --text-dark: #2C1810;      /* Chữ nâu đen */
+  --red-maroon: #8B0000;     
+  --red-bright: #C41E3A;    
+  --gold-main: #D4AF37;     
+  --gold-light: #F4E4BC;    
+  --green-jade: #004225;     
+  --cream-bg: #FAF8F5;     
+  --text-dark: #2C1810;      
   --text-grey: #666;
   
   --font-head: 'Playfair Display', serif;
@@ -29,7 +28,7 @@ body {
   overflow-x: hidden;
 }
 
-/* BACKGROUND MỜ ẢO (CINEMATIC) */
+
 .fixed-bg {
   position: fixed; inset: 0; z-index: -1;
   background-image: url('https://images.unsplash.com/photo-1503764654157-72d979d9af2f?q=80&w=2074&auto=format&fit=crop');
@@ -40,7 +39,7 @@ body {
 h1, h2, h3, h4 { font-family: var(--font-head); color: var(--red-maroon); font-weight: 700; }
 a { text-decoration: none; transition: var(--transition); }
 
-/* --- 2. PRELOADER --- */
+
 #preloader {
   position: fixed; inset: 0; background: var(--cream-bg); z-index: 9999;
   display: flex; align-items: center; justify-content: center;
@@ -50,7 +49,7 @@ a { text-decoration: none; transition: var(--transition); }
 .loader-line { width: 60px; height: 4px; background: var(--gold-main); margin: 0 auto; animation: load 1.5s infinite; }
 @keyframes load { 0% { width: 0; } 50% { width: 100px; } 100% { width: 0; margin-left: 100px; } }
 
-/* --- 3. NAVIGATION --- */
+
 .navbar {
   position: fixed; top: 0; width: 100%; padding: 15px 0;
   background: rgba(250, 248, 245, 0.9); backdrop-filter: blur(10px);
@@ -68,7 +67,7 @@ a { text-decoration: none; transition: var(--transition); }
 }
 .nav-link:hover::after, .nav-link.active::after { width: 100%; }
 
-/* Nút Ăn Gì Hôm Nay (Hiệu ứng Glow) */
+
 .btn-random {
   background: linear-gradient(135deg, #D4AF37, #F0D688);
   color: #5c0000; border: none; padding: 10px 25px; border-radius: 50px;
@@ -95,7 +94,7 @@ a { text-decoration: none; transition: var(--transition); }
 .mobile-nav-overlay.active { transform: translateY(0); }
 .close-nav { position: absolute; top: 20px; right: 20px; font-size: 2.5rem; cursor: pointer; }
 
-/* --- 4. HERO SECTION --- */
+
 .hero-section { min-height: 100vh; padding-top: 80px; display: flex; align-items: center; }
 .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; width: 90%; max-width: 1200px; margin: 0 auto; }
 
@@ -138,14 +137,14 @@ a { text-decoration: none; transition: var(--transition); }
   box-shadow: 0 5px 15px rgba(0,0,0,0.2); font-weight: 700;
 }
 
-/* --- 5. STATS --- */
+
 .stats-section { padding: 40px 0; border-top: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); }
 .stats-grid { display: flex; justify-content: center; gap: 80px; }
 .stat-item { text-align: center; }
 .stat-item .num { font-family: var(--font-head); font-size: 2.5rem; color: var(--gold-main); font-weight: 700; }
 .stat-item .label { display: block; color: var(--text-grey); font-size: 0.9rem; }
 
-/* --- 6. MENU & CARDS --- */
+
 .section { padding: 80px 0; }
 .container { width: 90%; max-width: 1200px; margin: 0 auto; }
 .section-header { text-align: center; margin-bottom: 60px; }
@@ -153,7 +152,7 @@ a { text-decoration: none; transition: var(--transition); }
 .heading { font-size: 2.5rem; margin: 10px 0; color: var(--red-maroon); }
 .divider { color: var(--green-jade); font-size: 1.2rem; opacity: 0.5; }
 
-/* Filter */
+
 .filter-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 40px; flex-wrap: wrap; }
 .filter-btn {
   background: transparent; border: 1px solid #ddd; color: var(--text-dark);
@@ -163,7 +162,7 @@ a { text-decoration: none; transition: var(--transition); }
   background: var(--red-maroon); color: #fff; border-color: var(--red-maroon);
 }
 
-/* Grid */
+
 .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
 .dish-card {
   background: #fff; border-radius: var(--radius); overflow: hidden;
@@ -178,7 +177,7 @@ a { text-decoration: none; transition: var(--transition); }
 .dish-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
 .dish-card:hover img { transform: scale(1.1); }
 
-/* Hover Description Overlay */
+
 .dish-overlay {
   position: absolute; inset: 0; background: rgba(139, 0, 0, 0.85);
   color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center;
@@ -194,7 +193,6 @@ a { text-decoration: none; transition: var(--transition); }
 .text-only { display: flex; align-items: center; justify-content: center; min-height: 150px; background: #fffaf0; border: 1px dashed var(--gold-main); }
 .dish-info-full h3 { color: var(--red-maroon); font-size: 1.3rem; }
 
-/* --- 7. VIDEO & CONTACT --- */
 .video-grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
 .video-item { background: #fff; padding: 10px; border-radius: 12px; box-shadow: var(--shadow-card); text-align: center; }
 .video-item iframe { width: 100%; height: 200px; border-radius: 8px; }
@@ -216,11 +214,11 @@ a { text-decoration: none; transition: var(--transition); }
 }
 .btn-submit:hover { background: var(--red-bright); }
 
-/* --- 8. FOOTER --- */
+
 .footer { background: #1a1a1a; color: #888; padding: 40px 0; text-align: center; margin-top: 50px; }
 .footer-logo { font-family: var(--font-head); font-size: 2rem; color: var(--gold-main); font-weight: 900; }
 
-/* --- 9. MODALS --- */
+
 .modal {
   position: fixed; inset: 0; z-index: 2000; display: flex; 
   justify-content: center; align-items: center; opacity: 0; pointer-events: none; transition: 0.4s;
@@ -228,7 +226,7 @@ a { text-decoration: none; transition: var(--transition); }
 .modal.active { opacity: 1; pointer-events: all; }
 .modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); }
 
-/* Story Modal */
+
 .story-content {
   background: #fff url('https://www.transparenttextures.com/patterns/paper.png');
   width: 90%; max-width: 600px; padding: 50px; border-radius: 10px;
@@ -239,7 +237,7 @@ a { text-decoration: none; transition: var(--transition); }
 .story-divider { color: var(--gold-main); margin-bottom: 20px; font-size: 1.5rem; }
 .story-modal-text { font-size: 1.1rem; color: #444; line-height: 1.8; text-align: justify; }
 
-/* Mystery Modal */
+
 .mystery-content {
   background: #fff; width: 90%; max-width: 500px; padding: 40px; border-radius: 20px;
   text-align: center; border: 4px double var(--gold-main); position: relative; z-index: 2;
@@ -264,11 +262,11 @@ a { text-decoration: none; transition: var(--transition); }
 .close-modal { position: absolute; top: 15px; right: 20px; font-size: 2rem; cursor: pointer; color: #999; }
 .close-modal:hover { color: var(--red-maroon); }
 
-/* --- SCROLL ANIMATION --- */
+
 [data-scroll] { opacity: 0; transform: translateY(30px); transition: 0.8s ease-out; }
 [data-scroll].visible { opacity: 1; transform: translateY(0); }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .nav-menu { display: none; }
   .hamburger { display: block; }
